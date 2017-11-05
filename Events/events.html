@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$("input").click(function(){
+			$(this).css("background-color","red");
+		});
+		});
+		$(document).ready(function(){
+			$("input").on({
+			   focus: function(){
+			   $(this).css("background-color","yellow");
+			   },
+			   mouseover:function(){
+			   alert("dfjhgfjha");
+			   }
+			   });
+			   });
+	    $(document).ready(function(){
+			$("button").click(function(){
+			    var img = $('<img />', {'src':'image.png','class': 'fullImage'});
+			$('.showimage').html(img).show();
+				});
+				});
+			
+			   
+		
+
+</script>
+</head>
+<body>
+
+Name: <input type="text" name="fullname"><br>
+Email: <input type="number" name="phone">
+<button>Submit</button>
+<div  class="showimage"></div>
+</body>
+</html>

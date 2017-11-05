@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fade</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('#firstImg').fadeIn(1000).delay(2000).fadeOut(1000);
+				$('#secondImg').delay(4000).fadeIn(1000).delay(2000).fadeOut(1000);
+				$('#thirdImg').delay(8000).fadeIn(1000);
+				
+});
+		</script>
+	</head>
+	<body>
+		<img id="firstImg" src="image1.png" style="width=250px;height:250px">
+		<img id="secondImg" src="image2.jpg"  style="width=250px;height:250px;display:none">
+		<img id="thirdImg" src="image3.jpg" style="width=250px;height:250px;display:none">
+	</body>
+</html>
