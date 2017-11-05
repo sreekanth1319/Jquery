@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>animate</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+			$("button").click(function(){
+			 var img=$("img");
+				img.animate({height: '+=150px',width: '+=150px'}, "slow");
+				img.animate({height: '-=100px',width: '-=100px'}, "slow");
+				img.animate({height: '+=200px',width: '+=200px'}, "slow");
+				img.animate({height: '-=100px',width: '-=100px'}, "slow");
+				img.animate({height: '250px',width: '300px'}, "slow");
+				
+				
+				});
+				});
+			
+		</script>
+	</head>
+	<body>
+	<button>Animate</button>
+		<img src="image.png" style="width:250px;height:300px"/>
+	</body>
+</html>

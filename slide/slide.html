@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Slide</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+			$('#slide-down').click(function(){
+			$('img').slideDown('fast');
+				});
+				});
+				$(document).ready(function(){
+			$('#slide-up').click(function(){
+			$('img').slideUp(1000);
+		});
+		});
+		$(document).ready(function(){
+			$('#toggle-sliding').click(function(){
+			$('img').slideToggle('slow');
+		});
+		});
+		</script>
+	</head>
+	<body>
+		<button id='slide-down'>Slide Down</button>
+		<button id='slide-up'>Slide Up</button>
+		<button id='toggle-sliding'>Toggle Sliding</button>
+		<img src="image.jpg" />
+	</body>
+</html>
